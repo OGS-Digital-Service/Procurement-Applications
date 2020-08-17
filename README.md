@@ -11,7 +11,7 @@ In here you'll find the base template files with assets for the NYS Global and U
 Nectai - I'll mark updates specifically for you and let you know by email as well.
 
 # COMET
-Files in the COMMON folder may help get setu up and project specific items can be committed to the master folders in this directory.
+Files in the COMMON folder may help get set up and project specific items can be committed to the master folders in this directory.
 
 # Filed Reqs
-Files in the COMMON folder may help get setu up and project specific items can be committed to the master folders in this directory.
+Files in the COMMON folder may help get set up and project specific items can be committed to the master folders in this directory.
