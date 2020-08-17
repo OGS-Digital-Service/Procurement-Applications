@@ -1,0 +1,106 @@
+
+
+<!-- This template shows ONLY the global and unviersal navigations and footers. Other styles will need to be correctly referenced in other template files. 
+In a local environment the universal navigation (white area) will not load unless you have a full local server setup. The Universal header and footer will load in automatically in a production environment with only the code snippet provided below
+-->
+
+
+<!DOCTYPE html>
+<head>
+        <link href="css/nys-global-nav.css" rel="stylesheet" ><!-- NYS OGS CSS Global Nav Styles must go in head -->       
+</head>
+<body>
+
+  <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true">  <!-- UNIVERSAL NAV (WHITE BAR AREA) This remote code div must go as the first div within the BODY -->
+    <script type="text/javascript">
+        var _NY = {
+            HOST: "static-assets.ny.gov",
+            BASE_HOST: "www.ny.gov",
+            hideSettings: true,
+            hideSearch: false
+        };
+        (function (document, bundle, head) {
+            head = document.getElementsByTagName('head')[0];
+            bundle = document.createElement('script');
+            bundle.type = 'text/javascript';
+            bundle.async = true;
+            bundle.src = "//static-assets.ny.gov/sites/all/widgets/universal-navigation/js/dist/global-nav-bundle.js";
+            head.appendChild(bundle);
+        }(document));
+    </script>
+    <div id="nygov-universal-notification" class="nygov-universal-notification"></div>
+    <div id="nygov-global-notification" class="nygov-universal-notification" style="display: block;"></div>
+  </div> <!-- END UNIVERSAL NAV -->
+  
+
+  <div class="nys-global-header horizontal unstacked" role="navigation" aria-label="Main"> <!-- NYS OGS GLOBAL NAVIGATION -->
+      <div class="nav-toggle"> <a href="#" role="button" id="nys-menu-control" tabindex="1">Navigation menu</a> </div>
+      <h1><a href="/">Directory of New York State Centralized Contracts</a></h1>
+          <ul id="nys-global-nav">
+              <li aria-expanded="false">
+                  <a href="/">Procurement Services Website</a>
+              </li>
+              <li aria-expanded="false">
+                  <a href="/contact-us/">eMarketplace</a>
+              </li>
+              <li aria-expanded="false">
+                  <a href="">Send a Contract Performance Report</a>
+              </li>
+              <li  aria-expanded="false">
+                  <a href="/services/create-contact/">Sign Up for Contract Notifications</a>
+              </li>
+              <li  aria-expanded="false">
+                  <a href="/services/">Customer Services</a>
+              </li>
+              <li  aria-expanded="false">
+                  <a href="/search-award/">Search</a>
+              </li>
+            </ul>
+  </div><!-- END NYS OGS GLOBAL NAVIGATION -->
+
+
+
+
+
+
+
+
+
+<div style="height:400px;"> <h1>this is a placeholder content DIV for demo only</h1> </div>
+
+
+
+
+
+
+
+<!-- OGS GLBOAL FOOTER CONTENT  
+For images sourced in this code snippet for twitter and facebook, please replace the relative path with the correct path to wherever images live in the prod environemnt
+--> 
+<div class="nys-global-footer">
+    <div class="footer-container">
+      <h3>Directory of New York State Centralized Contracts</h3>
+      <div class="social-media">
+        <div class="social-media-title">
+          <h4>CONNECT WITH US</h4>
+        </div>
+        <div class="social-media-links">
+          <ul class="menu">
+            <li><a href="https://www.facebook.com/nysprocurement/" id="facebook" target="_blank" title=""><img src="./img/ogs_fb.png"><span style="line-height:17px;">Facebook</span></a></li>
+            <li class="leaf"><a href="https://twitter.com/nyspro" id="twitter" target="_blank" title=""><img src="./img/ogs_tw.png"><span style="line-height:17px;">Twitter</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OGS GLBOAL FOOTER CONTENT  --> 
+ 
+
+<script src="js/nys-global-nav-header.js"></script><!-- NYS OGS javascript must be at the BOTTOM of the BODY content in order to load correct. Ideally this should actually be after the bodym but anywhere after the main body content will work.-->
+<script src="js/jquery-1.12.4.min.js"></script> <!--this is only needed locally as it's the jquery version in the portal -->
+
+
+
+</body>
+</html>

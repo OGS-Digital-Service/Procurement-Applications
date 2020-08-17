@@ -1,0 +1,1106 @@
+/* New York State Digital Service - OGS PAWS Portal data tables Stylesheet - JHSK 2020
+
+*/
+.ogs-table {
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  width: 100%;
+  font-size: 14px;
+}
+
+.ogs-table th {
+  background-color: #626669;
+  color: #fff;
+  padding: 10px;
+}
+
+.ogs-table tr {
+  border: 1px #d3d3d3 solid;
+  background-color: #fff;
+}
+
+.ogs-table tr:nth-child(odd) {
+  background-color: #F6F8F8;
+}
+
+.ogs-table td {
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .ogs-table tbody td:before {
+    content: attr(data-th);
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    width: 30%;
+  }
+  .ogs-table th {
+    display: none;
+  }
+  .ogs-table td {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/* New York State Digital Service - OGS PAWS Portal Master Stylesheet - JHSK 2020
+In order to keep things simple for style overlays on an existing framework, we've not used base/scss or other preprocessing stack for styling. All styles specific to NYS are in this sheet.
+*/
+/* FONTS _______________________________________________________________________________ */
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/proximanova/proximanova-regular.eot);
+  src: url(../fonts/proximanova/proximanova-regular.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-regular.woff2) format("woff2"), url(../fonts/proximanova/proximanova-regular.woff) format("woff"), url(../fonts/proximanova/proximanova-regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/proximanova/proximanova-semibold.eot);
+  src: url(../fonts/proximanova/proximanova-semibold.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-semibold.woff2) format("woff2"), url(../fonts/proximanova/proximanova-semibold.woff) format("woff"), url(../fonts/proximanova/proximanova-semibold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  font-style: normal;
+  src: url(../fonts/proximanova/proximanova-bold.eot);
+  src: url(../fonts/proximanova/proximanova-bold.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-bold.woff2) format("woff2"), url(../fonts/proximanova/proximanova-bold.woff) format("woff"), url(../fonts/proximanova/proximanova-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  font-style: normal;
+  src: url(../fonts/proximanova/proximanova-extrabold.eot);
+  src: url(../fonts/proximanova/proximanova-extrabold.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-extrabold.woff2) format("woff2"), url(../fonts/proximanova/proximanova-extrabold.woff) format("woff"), url(../fonts/proximanova/proximanova-extrabold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-style: italic;
+  src: url(../fonts/proximanova/proximanova-italic.eot);
+  src: url(../fonts/proximanova/proximanova-italic.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-italic.woff2) format("woff2"), url(../fonts/proximanova/proximanova-italic.woff) format("woff"), url(../fonts/proximanova/proximanova-italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/proximanova/proximanova-bolditalic.eot);
+  src: url(../fonts/proximanova/proximanova-bolditalic.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-bolditalic.woff2) format("woff2"), url(../fonts/proximanova/proximanova-bolditalic.woff) format("woff"), url(../fonts/proximanova/proximanova-bolditalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 200;
+  font-style: normal;
+  src: url(../fonts/proximanova/proximanova-light.eot);
+  src: url(../fonts/proximanova/proximanova-light.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-light.woff2) format("woff2"), url(../fonts/proximanova/proximanova-light.woff) format("woff"), url(../fonts/proximanova/proximanova-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 200;
+  font-style: italic;
+  src: url(../fonts/proximanova/proximanova-lightitalic.eot);
+  src: url(../fonts/proximanova/proximanova-lightitalic.eot#iefix) format("embedded-opentype"), url(../fonts/proximanova/proximanova-lightitalic.woff2) format("woff2"), url(../fonts/proximanova/proximanova-lightitalic.woff) format("woff"), url(../fonts/proximanova/proximanova-lightitalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "D Sari Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/dsaribold/DSari_Bold-webfont.eot);
+  src: url(../fonts/dsaribold/DSari_Bold-webfont.eot#iefix) format("embedded-opentype"), url(../fonts/dsaribold/DSari_Bold-webfont.woff2) format("woff2"), url(../fonts/dsaribold/DSari_Bold-webfont.woff) format("woff"), url(../fonts/dsaribold/DSari_Bold-webfont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswald/oswald-light-webfont.eot);
+  src: url(../fonts/oswald/oswald-light-webfont.eot#iefix) format("embedded-opentype"), url(../fonts/oswald/oswald-light-webfont.woff) format("woff"), url(../fonts/oswald/oswald-light-webfont.ttf) format("truetype"), url(../fonts/oswald/oswald-light-webfont.svg#oswaldlight) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswald/oswald-bold-webfont.eot);
+  src: url(../fonts/oswald/oswald-bold-webfont.eot#iefix) format("embedded-opentype"), url(../fonts/oswald/oswald-bold-webfont.woff) format("woff"), url(../fonts/oswald/oswald-bold-webfont.ttf) format("truetype"), url(../fonts/oswald/oswald-bold-webfont.svg#oswaldbold) format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/oswald/oswald-regular-webfont.eot);
+  src: url(../fonts/oswald/oswald-regular-webfont.eot#iefix) format("embedded-opentype"), url(../fonts/oswald/oswald-regular-webfont.woff) format("woff"), url(../fonts/oswald/oswald-regular-webfont.ttf) format("truetype"), url(../fonts/oswald/oswald-regular-webfont.svg#oswaldbook) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(../fonts/icomoon../fonts/icomoon.eot?visjn7=);
+  src: url(../fonts/icomoon../fonts/icomoon.eot?visjn7=#iefix) format("embedded-opentype"), url(../fonts/icomoon../fonts/icomoon.woff?visjn7=) format("woff"), url(../fonts/icomoon../fonts/icomoon.ttf?visjn7=) format("truetype"), url(../fonts/icomoon../fonts/icomoon.svg?visjn7=#icomoon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* END FONTS _______________________________________________________________________________ */
+/* all regular styles for OGS at desktop point ___________________________________________________________________*/
+body {
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  color: #000;
+  font-size: 16px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  font-weight: bold;
+}
+
+li a {
+  margin-left: 0px !important;
+}
+
+.nys-global-footer {
+  background-color: #F3D3C1;
+}
+
+.nys-global-footer .footer-container .social-media img {
+  height: 15px;
+  margin-bottom: 10px !important;
+}
+
+.award-title {
+  background-color: #626669;
+  padding: 15px 30px 15px 31px;
+  overflow: hidden;
+}
+
+.award-title h1 {
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.portal-footer {
+  background-color: #ccc;
+  height: 200px;
+  margin-top: 90px;
+}
+
+.pageHeader {
+  padding-top: 15px !important;
+  padding-left: 15px;
+}
+
+.pageHeader h2 {
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.fieldHeader {
+  font-size: 16px !important;
+}
+
+.fieldCell {
+  font-size: 16px !important;
+}
+
+.nav-tabs {
+  border-bottom: 0px solid #ddd !important;
+}
+
+#panel_general {
+  min-height: 200px;
+}
+
+.sectionContainer {
+  padding-left: 15px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.sectionSeparator2 {
+  width: 66.4% !important;
+  padding-right: 50px;
+  display: inline-table;
+}
+
+.exportButton {
+  background-color: #ac3f14 !important;
+  color: #fff;
+  border: 0px;
+  min-width: 90px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase !important;
+}
+
+.searchResultCount {
+  color: #CF7954 !important;
+  font-family: "Proxima Nova", "Arial" , sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  padding: 0px 9px 0px 0px;
+}
+
+.activePageButton {
+  width: 45px;
+  padding: 10px;
+  color: #000 !important;
+  border: none !important;
+}
+
+.activePageButton:hover {
+  background-color: #ac3f14 !important;
+  color: #fff !important;
+}
+
+.activePageButton-text {
+  min-width: 80px;
+  padding: 10px;
+  background-color: white;
+  color: #000 !important;
+  border: none;
+}
+
+.activePageButton-text:hover {
+  text-decoration: underline;
+  background-color: #ac3f14 !important;
+  color: #fff !important;
+}
+
+.inactivePageButton {
+  display: none;
+}
+
+.currentPageButton {
+  width: 45px;
+  background-color: #F6F8F8 !important;
+  color: #000 !important;
+  padding: 10px;
+  border: 1px solid #ccc !important;
+}
+
+.footNote {
+  font-family: "Proxima Nova", "Arial" , sans-serif !important;
+}
+
+#countLabel:before {
+  content: "(";
+}
+
+#countLabel:after {
+  content: ")";
+}
+
+#countLabel {
+  font-weight: normal;
+}
+
+.OGSsearchKeyword {
+  margin: 0 0 3%;
+  padding: 1rem;
+  height: 5.25rem;
+  min-width: 90%;
+}
+
+.OGSsearchcontainer {
+  padding-left: 6%;
+}
+
+.OGSpagination {
+  position: absolute;
+  right: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.OGS-special-notice {
+  background-color: #F3D3C1;
+  min-height: 50px;
+  margin: 3rem 0 3rem 0px;
+}
+
+.OGS-special-notice h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.OGS-special-notice p {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.OGS-special-notice button {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #AC3F14;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+  /* margin: 5% 0 0 0; */
+}
+
+.OGS-special-notice button:hover {
+  background-color: #7e2e0f;
+}
+
+h5.panel-h5 {
+  display: none;
+  font-size: 18px;
+}
+
+/* input and form controls__________________________________________________ */
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+}
+
+.searchTitle {
+  font-weight: bold;
+  font-family: "Oswald", sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 0px 10px 0px;
+  color: #000 !important;
+}
+
+.filterTitle {
+  font-weight: bold;
+  font-family: "Oswald", sans-serif !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px 0px 0px 0px;
+  color: #000 !important;
+}
+
+.searchKeyword--ogs {
+  min-width: 99%;
+  padding: 12px 0px 10px 30px;
+  border: 1px solid #999;
+  font-size: 16px;
+  width: 100px;
+}
+
+.filterSectionHeader {
+  padding: 10px 0px 10px 0px !important;
+  font-weight: bold;
+  font-family: "Proxima Nova", sans-serif !important;
+  font-size: 16px;
+  color: #000;
+  line-height: 26px;
+}
+
+.searchIcon {
+  top: 68px !important;
+  left: 24px !important;
+}
+
+/* END all regular styles for OGS at desktop point ___________________________________________________________________*/
+/* START this is the tablet style point ___________________________________________________________________*/
+@media (max-width: 992px) {
+  .filterSectionHeader {
+    padding-top: 0px !important;
+  }
+  h5.panel-h5 {
+    display: block;
+  }
+  .OGS-special-notice {
+    margin: 3rem 0 3rem 15px;
+  }
+  .nav-tabs {
+    margin-top: 0px !important;
+  }
+  .nav-tabs > li {
+    width: 100%;
+  }
+  .nav-tabs > li > a {
+    margin-right: -1px !important;
+    border-radius: 0px 0px 0px 0px !important;
+    font-size: 14px !important;
+  }
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #000 !important;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd !important;
+    border-right-color: transparent !important;
+  }
+}
+
+/* END this is the tablet style point ___________________________________________________________________*/
+/* START this is the mobile style point ___________________________________________________________________*/
+@media (max-width: 480px) {
+  .OGSpagination {
+    position: relative;
+  }
+}
+
+/* END this is the mobile style point ___________________________________________________________________*/
+/* NAVBAR AWARD SECTIONS start ___________________________________________________________*/
+.navbar-ogssections-award .navbar-brand {
+  display: none;
+}
+
+.navbar-ogssections-award {
+  border: none !important;
+  min-height: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+@media (max-width: 992px) {
+  .icon-plus-bootstrap {
+    color: #000;
+  }
+  .navbar-ogssections-award {
+    background-color: lightgray;
+  }
+  .navbar-ogssections-award .navbar-toggle:hover,
+  .navbar-ogssections-award .navbar-toggle:focus {
+    background-color: #CCC;
+  }
+  .navbar-ogssections-award .navbar-brand {
+    display: block;
+    color: #000;
+  }
+  .navbar-ogssections-background {
+    min-height: 1vh !important;
+  }
+  .navbar-ogssections-award .icon-bar {
+    background-color: #000 !important;
+  }
+  .navbar-ogssections-award .nav-tabs > li > a {
+    border: transparent !important;
+    color: #000 !important;
+  }
+  .navbar-ogssections-award .nav-tabs > li > a:hover {
+    border: transparent !important;
+    background-color: #fff !important;
+  }
+  .navbar-ogssections-award .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #000 !important;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-bottom-color: none;
+    border-bottom-color: transparent;
+    cursor: default;
+  }
+  .navbar-ogssections-award
+.navbar-ogssections-award {
+    color: #000;
+    background-color: #fff;
+  }
+  .navbar-ogssections-award .navbar-text {
+    color: #000;
+  }
+  .navbar-ogssections-award .navbar-nav > li {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 0px 0px 0px 0px;
+  }
+  .navbar-ogssections-award .navbar-nav > li > a {
+    color: #000;
+    font-weight: bold;
+    margin-left: 0px !important;
+  }
+  /* .navbar-ogssections-award .navbar-nav>li>a:hover,
+.navbar-ogssections-award .navbar-nav>li>a:focus {
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+    margin-right: -1px !important;
+} */
+  .navbar-ogssections-award .navbar-nav > .active > a,
+  .navbar-ogssections-award .navbar-nav > .active > a:hover,
+  .navbar-ogssections-award .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: #fff;
+    margin-right: -1px !important;
+  }
+  .navbar-ogssections-award .navbar-nav > .disabled > a,
+  .navbar-ogssections-award .navbar-nav > .disabled > a:hover,
+  .navbar-ogssections-award .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+  .navbar-ogssections-award .navbar-toggle {
+    border-color: transparent;
+    border: none !important;
+    margin-right: 25px;
+    padding: 10px 10px 3px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .navbar-ogssections-award .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-ogssections-award .navbar-collapse,
+  .navbar-ogssections-award .navbar-form {
+    border-color: none;
+    padding: 1px 0px;
+  }
+  .navbar-ogssections-award .navbar-nav > .open > a,
+  .navbar-ogssections-award .navbar-nav > .open > a:hover,
+  .navbar-ogssections-award .navbar-nav > .open > a:focus {
+    background-color: #fff;
+    color: #fff;
+  }
+  .navbar-ogssections-award .navbar-link {
+    color: #9d9d9d;
+  }
+  .navbar-ogssections-award .navbar-link:hover {
+    color: #fff;
+  }
+  .navbar-ogssections-award .btn-link {
+    color: #9d9d9d;
+  }
+  .navbar-ogssections-award .btn-link:hover,
+  .navbar-ogssections-award .btn-link:focus {
+    color: #fff;
+  }
+  .navbar-ogssections-award .btn-link[disabled]:hover,
+  .navbar-ogssections-award .btn-link[disabled]:focus,
+  fieldset[disabled] .navbar-ogssections-award .btn-link:hover,
+  fieldset[disabled] .navbar-ogssections-award .btn-link:focus {
+    color: #444;
+  }
+}
+
+/* NAVBAR AWARD SECTIONS END ___________________________________________________________*/
+/* NAVBAR filter options start ___________________________________________________________*/
+.navbar-ogssections__filter .navbar-brand {
+  display: none;
+}
+
+.divider--line {
+  border-bottom: 1px solid #fff;
+  margin: 0px -15px 0px -15px;
+  display: block;
+}
+
+.navbar-ogssections__filter {
+  border: none !important;
+  min-height: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: -1px !important;
+}
+
+.contractor-xs {
+  display: none;
+}
+
+.contractor-md {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .icon-plus-bootstrap {
+    color: #000;
+  }
+  .navbar__ogscolor {
+    background-color: lightgray;
+    border-top: 1px solid #fff;
+  }
+  .contractor-xs {
+    display: block !important;
+    padding-left: 0px;
+  }
+  .contractor-md {
+    display: none;
+  }
+  .filterTitle {
+    display: none;
+  }
+  .navbar-ogssections__filter {
+    background-color: lightgray;
+  }
+  .navbar-ogssections__filter .navbar-toggle:hover,
+  .navbar-ogssections__filter .navbar-toggle:focus {
+    background-color: #CCC;
+  }
+  .navbar-ogssections__filter .navbar-brand {
+    display: block;
+  }
+  .navbar-ogssections__filter .navbar-brand.navbar-brand__filter {
+    font-weight: bold;
+    font-family: "Oswald", sans-serif !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    padding-left: 0px;
+    color: #000 !important;
+    display: block;
+  }
+  .navbar-ogssections__filter .icon-bar {
+    background-color: #000 !important;
+  }
+  .navbar-ogssections__filter .nav-tabs > li > a {
+    border: transparent !important;
+    color: #000 !important;
+  }
+  .navbar-ogssections__filter .nav-tabs > li > a:hover {
+    border: transparent !important;
+    background-color: #fff !important;
+  }
+  .navbar-ogssections__filter .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #000 !important;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-bottom-color: none;
+    border-bottom-color: transparent;
+    cursor: default;
+  }
+  .navbar-ogssections__filter
+.navbar-ogssections__filter {
+    color: #000;
+    background-color: #fff;
+  }
+  .navbar-ogssections__filter .navbar-text {
+    color: #000;
+  }
+  .navbar-ogssections__filter .navbar-nav > li {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 0px 0px 0px 0px;
+  }
+  .navbar-ogssections__filter .navbar-nav > li > a {
+    color: #000;
+    font-weight: bold;
+    margin-left: 0px !important;
+  }
+  .navbar-ogssections__filter .navbar-nav > .active > a,
+  .navbar-ogssections__filter .navbar-nav > .active > a:hover,
+  .navbar-ogssections__filter .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: #fff;
+    margin-right: -1px !important;
+  }
+  .navbar-ogssections__filter .navbar-nav > .disabled > a,
+  .navbar-ogssections__filter .navbar-nav > .disabled > a:hover,
+  .navbar-ogssections__filter .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+  .navbar-ogssections__filter .navbar-toggle {
+    border-color: transparent;
+    border: none !important;
+    margin-right: 11px;
+    padding: 10px 10px 3px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .navbar-ogssections__filter .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-ogssections__filter .navbar-collapse,
+  .navbar-ogssections__filter .navbar-form {
+    border-color: none;
+    padding: 1px 0px;
+  }
+  .navbar-ogssections__filter .navbar-nav > .open > a,
+  .navbar-ogssections__filter .navbar-nav > .open > a:hover,
+  .navbar-ogssections__filter .navbar-nav > .open > a:focus {
+    background-color: #fff;
+    color: #fff;
+  }
+  .navbar-ogssections__filter .navbar-link {
+    color: #9d9d9d;
+  }
+  .navbar-ogssections__filter .navbar-link:hover {
+    color: #fff;
+  }
+  .navbar-ogssections__filter .btn-link {
+    color: #9d9d9d;
+  }
+  .navbar-ogssections__filter .btn-link:hover,
+  .navbar-ogssections__filter .btn-link:focus {
+    color: #fff;
+  }
+  .navbar-ogssections__filter .btn-link[disabled]:hover,
+  .navbar-ogssections__filter .btn-link[disabled]:focus,
+  fieldset[disabled] .navbar-ogssections__filter.btn-link:hover,
+  fieldset[disabled] .navbar-ogssections__filter .btn-link:focus {
+    color: #444;
+  }
+}
+
+/* NAVBAR filter options ___________________________________________________________*/
+/* NAVBAR OGS-SECTIONS START ___________________________________________________________*/
+.navbar.navbar-ogssections {
+  margin-bottom: 0px !important;
+}
+
+.navbar-ogssections {
+  background-color: #D3D3D3;
+  color: #9d9d9d;
+}
+
+.navbar-ogssections-background {
+  min-height: 100vh;
+  margin-bottom: -25px;
+  z-index: -10;
+  position: relative;
+  background-color: #D3D3D3;
+  display: block;
+}
+
+.navbar-ogssections
+.navbar-ogssections {
+  color: #000;
+  background-color: #fff;
+}
+
+.navbar-ogssections .navbar-text {
+  color: #000;
+}
+
+.navbar-ogssections .navbar-nav > li {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 0px 0px 0px 0px;
+}
+
+.navbar-ogssections .navbar-nav > li > a {
+  color: #000;
+  font-weight: bold;
+  margin-left: 0px !important;
+}
+
+.navbar-ogssections .navbar-nav > li > a:hover,
+.navbar-ogssections .navbar-nav > li > a:focus {
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  margin-right: -1px !important;
+}
+
+.navbar-ogssections .navbar-nav > .active > a,
+.navbar-ogssections .navbar-nav > .active > a:hover,
+.navbar-ogssections .navbar-nav > .active > a:focus {
+  color: #000;
+  background-color: #fff;
+  margin-right: -1px !important;
+}
+
+.navbar-ogssections .navbar-nav > .disabled > a,
+.navbar-ogssections .navbar-nav > .disabled > a:hover,
+.navbar-ogssections .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+
+.navbar-ogssections .navbar-toggle {
+  border: none !important;
+  margin-right: 25px;
+  padding: 10px 10px 3px 10px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.navbar-ogssections .navbar-toggle:hover,
+.navbar-ogssections .navbar-toggle:focus {
+  background-color: #CCC;
+}
+
+.navbar-ogssections .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+.navbar-ogssections .navbar-collapse,
+.navbar-ogssections .navbar-form {
+  border-color: none;
+}
+
+.navbar-ogssections .navbar-nav > .open > a,
+.navbar-ogssections .navbar-nav > .open > a:hover,
+.navbar-ogssections .navbar-nav > .open > a:focus {
+  background-color: #fff;
+  color: #fff;
+}
+
+.navbar-ogssections .navbar-link {
+  color: #9d9d9d;
+}
+
+.navbar-ogssections .navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-ogssections .btn-link {
+  color: #9d9d9d;
+}
+
+.navbar-ogssections .btn-link:hover,
+.navbar-ogssections .btn-link:focus {
+  color: #fff;
+}
+
+.navbar-ogssections .btn-link[disabled]:hover,
+.navbar-ogssections .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-ogssections .btn-link:hover,
+fieldset[disabled] .navbar-ogssections .btn-link:focus {
+  color: #444;
+}
+
+@media (max-width: 992px) {
+  .navbar-ogssections {
+    padding-bottom: 0em;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #fff;
+  }
+  .navbar-ogssections .navbar-nav .open .dropdown-menu .divider {
+    background-color: #fff;
+  }
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #fff;
+  }
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-ogssections .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+}
+
+/* NAVBAR OGS-SECTIONS END ___________________________________________________________*/
+/* START this is bootstrap overrides ___________________________________________________________*/
+.row-no-margin {
+  margin: 0 !important;
+}
+
+.row-no-right-margin {
+  margin-right: 0px !important;
+}
+
+.nopadding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .nopadding {
+    margin: 0 !important;
+  }
+  .reset-remove-margins {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+  }
+  .row-left-margin {
+    margin-left: -15px !important;
+  }
+  .row-right-margin {
+    margin-right: -15px !important;
+  }
+  .sectionSeparator {
+    padding-top: 10px;
+    width: 100% !important;
+  }
+  .sectionSeparator2 {
+    width: 100% !important;
+  }
+  .nopadding-right {
+    padding-right: 0px !important;
+  }
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+  text-decoration: underline !important;
+  color: #fff !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #000;
+  font-weight: bold;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-bottom-color: #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857;
+  border-radius: 5px 5px 0 0;
+  color: #007ac2 !important;
+  border: 1px solid #ccc;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #007ac2;
+}
+
+.nav > li > a {
+  padding: 18px 15px !important;
+}
+
+.navbar-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 26px;
+}
+
+.navbar-collapse {
+  overflow-x: hidden !important;
+}
+
+.navbar-nav {
+  margin: 7.25px -15px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 21px;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    /* height: auto !important; */
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .row-no-right-margin {
+    margin-right: 0px !important;
+  }
+}
+
+@media (min-width: 1199px) {
+  .navbar-collapse {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 21px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+  .navbar-nav {
+    border-top: 1px solid #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+    border-top: 1px solid #fff;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+}
+
+/* END bootstrap overrides ___________________________________________________________*/
+th[role=columnheader]:not(.no-sort) {
+  cursor: pointer;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+  content: '';
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #fff transparent;
+  visibility: visible;
+  opacity: 1;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+th[aria-sort=ascending]:not(.no-sort):after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
+
+th[aria-sort]:not(.no-sort):after {
+  visibility: visible;
+  opacity: 1;
+}
+
+th[role=columnheader]:not(.no-sort):hover:after {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <head>
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link href="css/NYSOGS_PAWS_Style.css" rel="stylesheet" /> <!-- NYS OGS CSS Styles with overrides -->
-        <link href="css/NYSOGS_PAWS_DataTables.css" rel="stylesheet" /> <!-- NYS OGS CSS Styles with overrides -->
-        <link href="css/nys-global-nav.css" rel="stylesheet" ><!-- NYS OGS CSS Global Nav Styles  -->
-        <link href="css/tablesort.css" rel="stylesheet" /> <!-- tablesort css -->
-        <link href="css/portal.css" rel="stylesheet" />
-        <link href="css/theme.css" rel="stylesheet" />
-        <link href="css/glyphicons-font-awesome-migrate.min.css" rel="stylesheet"/>
-        <link href="css/preform.bundle-6192e4ae44.css" rel="stylesheet" />
-        <script src="js/tablesort.js"></script><!-- js for tablesort must go in HEAD-->
+  <link href="../_COMMON/css/local_only/bootstrap.min.css" rel="stylesheet" /> <!-- for local view - assuming portal already has this-->
+  <link href="../_COMMON/css/local_only/portal.css" rel="stylesheet" /><!-- for local view - assuming portal already has this-->
+  <link href="../_COMMON/css/local_only/theme.css" rel="stylesheet" /><!-- for local view - assuming portal already has this-->
+  <link href="../_COMMON/css/local_only/glyphicons-font-awesome-migrate.min.css" rel="stylesheet"/><!-- for local view - assuming portal already has this-->
+  <link href="../_COMMON/css/local_only/preform.bundle-6192e4ae44.css" rel="stylesheet" /><!-- for local view - assuming portal already has this-->
+
+  <link href="../_COMMON/css/nys-global-nav.css" rel="stylesheet" ><!-- NYS OGS CSS Global Navigation Styles  -->
+  <link href="../_COMMON/css/NYSOGS_Master_Styles.css" rel="stylesheet" /> <!-- MASTER ALL NYSOGS COMPILED STYLES -->
+  <script src="../_COMMON/js/tablesort.js"></script><!-- NYSOGS js for tablesort must go in HEAD-->
         
 </head>
 <body>
@@ -320,11 +319,10 @@ var lotList = [];
   </div>
   <!-- OGS GLBOAL FOOTER CONTENT ENDS HERE --> 
  
-  
-<script src="js/ogsdatatable.js"></script><!-- OGS data table javascript NEW -->
-<script src="js/jquery-1.12.4.min.js"></script> <!--this is only needed locally as it's the jquery version in the portal -->
+  <script src="../_COMMON/js/ogsdatatable.js"></script><!-- OGS data table javascript -->
+<script src="../_COMMON/js/local_only/jquery-1.12.4.min.js"></script> <!--local use only as the portal already has this version of jquery -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> <!-- bootstrap js needs to be referenced somewhere -->
-<script src="js/nys-global-nav-header.js"></script><!-- NYS OGS javascript must be at the BOTTOM of the BODY content in order to load correct-->
+<script src="../_COMMON/js/nys-global-nav-header.js"></script><!-- NYS OGS javascript must be at the BOTTOM of the BODY content in order to load correct-->
 
 </body>
 </html>
