@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+
+
+
+/* START this is bootstrap overrides ___________________________________________________________*/
+.row-no-margin {
+    margin: 0 !important;
+}
+.row-no-right-margin {
+    margin-right: 0px !important;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+@media(max-width:992px) {
+    .nopadding {
+        margin: 0 !important;
+    }
+    .reset-remove-margins {
+        margin-right: 15px !important; 
+        margin-left: 15px !important;
+    }
+    .row-left-margin {
+        margin-left: -15px !important;
+    }
+    .row-right-margin {
+        margin-right: -15px !important;
+    }
+    .sectionSeparator {
+        padding-top: 10px;
+        width: 100% !important;
+    }
+    .sectionSeparator2 {
+        width: 100% !important;
+    }
+    .nopadding-right {
+        padding-right: 0px !important;
+    }
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+    text-decoration: underline !important;
+    color: #fff !important; 
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #000;
+    font-weight: bold;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+        border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-radius: 5px 5px 0 0;
+    color: #007ac2 !important;
+    border: 1px solid #ccc;
+}
+.nav-link {
+    font-weight: bold;
+    color: #007ac2;
+}
+.nav > li > a {
+    padding: 18px 15px !important;
+}
+.navbar-brand {
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+color: #000;
+line-height: 26px;
+}
+.navbar-collapse {
+    overflow-x: hidden !important;
+}
+.navbar-nav {
+    margin: 7.25px -15px
+}
+.navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 21px
+}
+@media(min-width:992px) {
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        /* height: auto !important; */
+        padding-bottom: 0;
+        overflow: visible !important
+    }
+    .navbar-collapse.in {
+        overflow-y: visible
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0
+    }
+     .navbar-toggle {
+        display: none
+    }
+    .row-no-right-margin {
+        margin-right: 0px !important;
+    }
+    
+}
+@media(min-width:1199px) {
+.navbar-collapse {
+    padding: 0 !important
+}
+}
+@media(max-width:1199px) {
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none
+    }
+    .navbar-nav .open .dropdown-menu>li>a,
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px
+    }
+    .navbar-nav .open .dropdown-menu>li>a {
+        line-height: 21px
+    }
+    .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-nav .open .dropdown-menu>li>a:focus {
+        background-image: none
+    }
+    .navbar-nav {
+        
+        border-top: 1px solid #fff;
+    }
+}
+@media(min-width:1200px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        border-top: 1px solid #fff;
+    }
+    .navbar-nav>li {
+        float: left
+    }
+}
+/* END bootstrap overrides ___________________________________________________________*/

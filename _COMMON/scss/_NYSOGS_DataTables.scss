@@ -10,7 +10,7 @@
     font-size: 14px;
 }
 .ogs-table th {
-    background-color: #626669;
+    background-color: $ogs-table-header;
     color: #fff;
     padding: 10px;
     
@@ -20,7 +20,7 @@
     background-color: #fff;
 }
 .ogs-table tr:nth-child(odd) {
-    background-color: #F6F8F8;
+    background-color: $ogs-table-row-alternate;
 }
 .ogs-table td {
     padding: 10px;
