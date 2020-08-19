@@ -8,7 +8,7 @@
 
   <link href=" ./css/nys-global-nav.css" rel="stylesheet" ><!-- NYS OGS CSS Global Navigation Styles  -->
   <link href=" ./css/NYSOGS_Master_Styles.css" rel="stylesheet" /> <!-- MASTER ALL NYSOGS COMPILED STYLES -->
-  <script src=" ./js/tablesort.js"></script><!-- NYSOGS js for tablesort must go in HEAD-->
+  
 <body>
 
 
@@ -213,7 +213,7 @@
       </div>
      
   <!-- data table format starts here-->
-  <table id="sort" class="ogs-table"><!-- all data tables need class ogs-table and id sort and need proper table structure from html, ex. table thead th tbody etc as shown here-->
+  <table class="ogs-table"><!-- all data tables need class ogs-table need proper table structure from html, ex. table thead th tbody etc as shown here-->
   <thead>
     <tr>
     <th>Contractor</th>
@@ -250,10 +250,7 @@
     
   </tbody>
   </table>
-  <!-- this script needs to go after a table - can go at bottom of the page template too-->
-  <script>
-    new Tablesort(document.getElementById('sort'));
-  </script>
+
   <!-- table format ends here -->
   
   
