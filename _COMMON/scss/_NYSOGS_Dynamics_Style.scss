@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $nys-primary-font;
     font-weight: bold;;
 }
+
 li a {
     margin-left: 0px !important;
 }
@@ -194,13 +195,6 @@ h5.panel-h5 {
 .tab-spacer {
     padding-top: 2rem;
 }
-
-.tab-content__area > h1, h2, h3, h4, h5, h6 {
-    color: $ogs-primary-color;
-}
-
-
-
 
 /* input and form controls__________________________________________________ */
 
