@@ -183,7 +183,22 @@ li a {
 h5.panel-h5 {
     display: none;
     font-size: 18px;
+    color: #000 !important;
 }
+
+.tab-wrapper {
+    border: 1px solid #dddddd; 
+    padding: 15px;
+}
+
+.tab-spacer {
+    padding-top: 2rem;
+}
+
+.tab-content__area > h1, h2, h3, h4, h5, h6 {
+    color: $ogs-primary-color;
+}
+
 
 
 
