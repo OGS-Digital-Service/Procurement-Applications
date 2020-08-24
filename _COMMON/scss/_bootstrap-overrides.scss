@@ -62,12 +62,12 @@
     margin-right: 2px;
     line-height: 1.42857;
     border-radius: 5px 5px 0 0;
-    color: #007ac2 !important;
+    color: $ogs-link-color !important;
     border: 1px solid #ccc;
 }
 .nav-link {
     font-weight: bold;
-    color: #007ac2;
+    color: $ogs-link-color;
 }
 .nav > li > a {
     padding: 18px 15px !important;

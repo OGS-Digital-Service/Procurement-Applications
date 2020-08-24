@@ -1,35 +1,11 @@
 
 @charset "UTF-8";
 
+.tab-content__area {
+    img {
+        padding: 5px 25px 10px 5px;
+        float: left;
+        clear: right;
+    }
 
-.tab-content__area > h1, h2, h3, h4, h5, h6 {
-    color: $ogs-primary-color;
-    font-weight: bold;
-    padding: 0 0 0.3em;
-    margin: 0;
-    line-height: 1.25em;
-}
-
-.tab-content__area > h1 {
-    font-size:48px;
-}
-
-.tab-content__area > h2 {
-    font-size:42px;
-}
-
-.tab-content__area > h3 {
-    font-size:36px;
-}
-
-.tab-content__area > h4 {
-    font-size:30px;
-}
-
-.tab-content__area > h5 {
-    font-size:24px;
-}
-
-.tab-content__area > h6 {
-    font-size:18px;
 }

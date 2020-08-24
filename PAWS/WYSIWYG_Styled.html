@@ -53,7 +53,7 @@
 <div class="col-md-2 nopadding-right">
 
 <nav class="navbar navbar-ogssections ">
-    <div class="navbar-header">
+    <div class="navbar-header" data-toggle="collapse" data-target="#myNavbar">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-plus-bootstrap"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
@@ -93,7 +93,7 @@
 <div class="row reset-remove-margins">
   <div class="col-md-12 nopadding-right">
         <nav class="navbar navbar-ogssections-award">
-            <div class="navbar-header">
+            <div class="navbar-header" data-toggle="collapse" data-target="#myNavbar2">
             <button type="button" class="navbar-toggle award" data-toggle="collapse" data-target="#myNavbar2">
                 <span class="icon-plus-bootstrap"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
@@ -110,6 +110,12 @@
                 </li>
                 <li class="nav-item" id="tabButton_tables">
                   <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="javascript:gotoAwardTab('tables')">Tables</a>
+                </li>
+                <li class="nav-item" id="tabButton_paragraph">
+                  <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="javascript:gotoAwardTab('paragraph')">Links & Paragraph</a>
+                </li>
+                <li class="nav-item" id="tabButton_img">
+                  <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="javascript:gotoAwardTab('img')">Images</a>
                 </li>
                 
                 </ul><!-- end of nav tabs ul -->
@@ -183,6 +189,45 @@
         
     </div>
   </div>
+
+  <div class="tab-wrapper" id="panel_paragraph" style="display: none;">
+    <div class="tab-content__area">
+        <h5 class="panel-h5">Links & Paragraph Text </h5> <!-- Necati, this area needs to pull the data from the tab name. Is this a variable we can put here to dynamically display that? -->
+        <p><a href="https://ogs.ny.gov">This is a link</a></p>
+        <p>This is a larger paragraph of text to show how spacing should be in relation to headings, list items, and other text. We are your one-stop place for all purchasing and procurement-related assistance. From general questions to gathering quotes, let the Buy Desk navigate and guide you through the state's purchasing requirements. Benefits to you include: 
+          <ul>
+            <li>Saving time and resources</li>
+          
+            <li>Identifying cost savings opportunities</li>
+            
+            <li>Negotiating with vendors</li>
+            
+            <li>Improving prices on individual purchases</li>
+            
+            <li>Easier processing for requisitions and purchase orders</li>
+            
+            <li>It's free!</li>
+
+
+          </ul>
+          </p>
+     
+    </div>
+  </div>
+
+  <div class="tab-wrapper" id="panel_img" style="display: none;">
+    <div class="tab-content__area">
+        <h5 class="panel-h5">Image in text </h5> <!-- Necati, this area needs to pull the data from the tab name. Is this a variable we can put here to dynamically display that? -->
+        <p>
+          <img src="https://empirestateplaza.ny.gov/sites/g/files/oee991/files/styles/bio_frame/public/media/2019/04/26-lucius-robinson.jpg?itok=rM33oUSf" />
+        
+          Educated in public schools, Robinson studied law at Delhi Academy (Delaware Co) and was admitted to the bar in 1832. After practicing law in Catskill (Greene Co), he became district attorney of Greene Co in 1837 and was master of chancery in New York City from 1843 to 1847. Robinson, a Democrat, was a prominent member of the 1848 Free-Soil Convention, and his strong antislavery views led him to join the newly formed Republican Party in 1856. He was elected to the state assembly in 1860 and as state comptroller in 1861 and 1863. Robinson returned to the Democratic Party after the Civil War. Voters elected him comptroller in 1875 and governor in 1876. A believer in budgetary frugality, Robinson’s overriding concern was easing the tax burden. The state general debt was paid off in 1878, leading to the lowest state tax rate in 16 years. Unhappy with cost overruns on the new capitol building in Albany, Robinson approved only enough funds to complete the legislative and gubernatorial chambers.
+
+          On 7 Jan 1879, he became the first governor to give his annual message to the legislature in the new building. After losing his bid for reelection later that year, Robinson retired to his farm outside Elmira.
+        </p>
+     
+    </div>
+  </div>
       
 
 
@@ -195,6 +240,11 @@
       document.getElementById("tabButton_tables").className = 'nav-link';
       document.getElementById("panel_tables").style.display = 'none';
 
+      document.getElementById("tabButton_paragraph").className = 'nav-link';
+      document.getElementById("panel_paragraph").style.display = 'none';
+
+      document.getElementById("tabButton_img").className = 'nav-link';
+      document.getElementById("panel_img").style.display = 'none';
     
 
       document.getElementById("tabButton_" +tabName).className = 'nav-link active';
