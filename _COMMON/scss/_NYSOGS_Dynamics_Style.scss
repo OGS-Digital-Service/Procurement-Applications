@@ -469,6 +469,7 @@ display: none;
 .navbar__ogscolor {
     background-color:rgb(211, 211, 211);
     border-top: 1px solid #fff;
+    
 }
 .contractor-xs {
     display: block !important; 
@@ -605,7 +606,8 @@ fieldset[disabled] .navbar-ogssections__filter .btn-link:focus {
 
 /* NAVBAR OGS-SECTIONS START ___________________________________________________________*/
 .navbar.navbar-ogssections {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
 }
 .navbar-ogssections {
     background-color: #D3D3D3;
@@ -702,9 +704,15 @@ fieldset[disabled] .navbar-ogssections .btn-link:focus {
 }
 @media(max-width:992px) {
     .navbar-ogssections {
-        padding-bottom:0em;
-        height: auto;
+        
+        background-color: #D3D3D3;
+        
      }
+     .navbar-ogssections-background {
+        display: none !important;
+    }
+  
+    
 
 }
 @media(max-width:1199px) {
