@@ -9,3 +9,14 @@
     }
 
 }
+
+@media(max-width:768px) {
+
+    .tab-content__area {
+        img {
+            object-fit: contain;
+width: 100%;        
+        }
+    
+    }
+}
