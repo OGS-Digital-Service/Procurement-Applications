@@ -30,10 +30,11 @@
 
 .ogs-table tbody td:before {
     content: attr(data-th);
-    display: inline-block;
+    display: flex;
     font-weight: bold;
     padding: 10px;
     width: 30%;
+    flex: 0 0 auto;
 }
 
 
@@ -43,9 +44,10 @@
 }
 
 .ogs-table td {
-    display: inline-block;
+    display: flex;
     width: 100%;
-}
+    align-items: center;
+}   
 
 
 }
