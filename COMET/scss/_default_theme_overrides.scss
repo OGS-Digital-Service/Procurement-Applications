@@ -9,4 +9,20 @@
 }
 
 
+.breadcrumb>li+li:before {
+ 
+    color: $ogs-primary-color;
+}
 
+.breadcrumb > .active {
+    color: $ogs-primary-color;
+}
+
+.breadcrumb > li {
+    color: $ogs-primary-color;
+}
+
+.breadcrumb > li a, .breadcrumb > li a:hover {
+    text-decoration: none;
+    color: $ogs-primary-color;
+}
