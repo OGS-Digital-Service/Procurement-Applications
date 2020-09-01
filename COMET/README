@@ -1,1 +1,3 @@
 For this project, you should ignore the _COMMON css and use the NYSOGS_COMeT_Version.css in this css directory. The common css was scoped with the idea in mind that the projects were using the same codebase and portal instance, which is not the case. As such the Master Styles compiled css probably will be more of a headache than an asset and a much more limited and custom scope will be taken here in the comet version.
+
+If you clone the entire procurement-applications repo locally (entire repo, not just this directory as the fonts are stored in COMMON), you should be able to see a local version of how the templates and styles should look. 
