@@ -2,13 +2,14 @@
 <head>
 
   <link href="./css/NYSOGS_Isolated_components.css" rel="stylesheet" /> <!-- Isolated NYSOGS styled components-->
-  
+  </head>
 <body>
 
 
 
-<h1 class="demo-only">General Heading Styles </h1>
+<h1 class="demo-only">General Paragraph Styles </h1>
 
+<h5 class="demo-only"> Headings </h5>
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -17,6 +18,42 @@
 <h6>Heading 6</h6>
 
 
+<h5 class="demo-only"> Paragraph text, links, and lists </h5>
+<p><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0 </a> covers a wide range of recommendations for making Web content more accessible. Following these guidelines will make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity and combinations of these. Following these guidelines will also often make your Web content more usable to users in general. </p>
+
+  <p>WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG) Overview for an introduction and links to WCAG technical and educational material. </p>
+
+
+<p><a href="https://ogs.ny.gov">Hyperlink Color that meets WCAG 2.0AA</a></p>
+
+<p>
+<ul>
+  <li>An unordered list item</li>
+  <li>An unordered list item</li>
+  <ul><li>A second level unordered list item</li></ul>
+  <li>An unordered list item</li>
+  <li>An unordered list item and a <a href="https://ogs.ny.gov">hyperlink</a></li>
+</ul>
+
+<ol>
+  <li>an ordered list item </li>
+  <li>an ordered list item </li>
+  <ol><li>a second level ordered list item</li>
+    <li>a second level ordered list item</li>
+    <li>a second level ordered list item</li>
+    <ol> <li> a third level</li></ol>
+  </ol>
+  <li>an ordered list item </li>
+  <li>an ordered list item </li>
+  <ol><li>a second level ordered list item</li>
+    <li>a second level ordered list item</li>
+    <li>a second level ordered list item</li>
+    <ol> <li> a third level</li></ol>
+  </ol>
+  <li>an ordered list item </li>
+</ol>
+
+</p>
 
 <h1 class="demo-only">Form Label and Input Controls </h1>
   
@@ -83,10 +120,10 @@
 
       <h5 class="demo-only"> Text input </h5>
   <form>
-    <label for="placeholder-only-ID" class="ogs-input_text">Text Input Label</label>
+    <label for="placeholder-only-ID" class="ogs-label">Text Input Label</label>
     <input type="text" id="placeholder-only-ID" > 
 
-    <label for="placeholder-only-ID-2" class="ogs-input_text">Text Area Label </label>
+    <label for="placeholder-only-ID-2" class="ogs-label">Text Area Label </label>
     <textarea id="placeholder-only-ID-2"></textarea> 
     
     
@@ -95,7 +132,7 @@
 
 
     <h5 class="demo-only"> Selectbox</h5>
-    <label for="placeholder-only-ID-3" class="ogs-input_text">Select Label </label>
+    <label for="placeholder-only-ID-3" class="ogs-label">Select Label </label>
     <select id="placeholder-only-ID-3">
       <option id="demoID1" selected disabled> - Select - </option>
       <option id="demoID2"> First Option </option>
@@ -110,7 +147,13 @@
 
   <h1 class="demo-only">Buttons </h1>
 
-<button>This is a standard button</button>
+<button class="ogs">This is a standard button</button> <button class="ogs">Next to another</button>
+
+
+
+<h5 class="demo-only"> Pagination buttons</h5>
+
+<button class="activePageButton-text">First Page</button><button class="activePageButton"> 1 </button><button class="currentPageButton"> 2 </button><button class="activePageButton"> 3 </button><button class="activePageButton-text">Last Page</button>
 
 
 

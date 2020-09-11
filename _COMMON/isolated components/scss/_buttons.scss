@@ -1,3 +1,90 @@
 
 @charset "UTF-8";
 
+button {
+    font-size: 90%;
+    font-family: $nys-primary-font;
+}
+
+button.ogs {
+    background-color: $ogs-primary-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 50px;
+    padding: 22px 50px;
+    margin: 4px 4px 0 0;
+
+    &:hover {
+        background-color: $ogs-tertiary-color;
+    }
+
+    &:active {
+        outline: 1px solid $ogs-primary-color;
+        box-shadow: 0 0 3px $ogs-primary-color;
+        border-color: $ogs-primary-color;
+    }
+
+}
+
+
+
+
+/* boostrap pagination buttons */
+.activePageButton {
+    width: 45px;
+    font-weight: normal;
+    padding: 10px;
+    color: #000;
+    border: none;
+    background-color: #fff;
+
+    &:hover {
+        background-color:$ogs-primary-color;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:active {
+        outline: 1px solid $ogs-primary-color;
+        box-shadow: 0 0 3px $ogs-primary-color;
+        border-color: $ogs-primary-color;
+    }
+
+}
+
+.activePageButton-text {
+    min-width: 80px;
+    padding:10px;
+    background-color: white;
+    color: #000;
+    border: none;
+
+    &:hover {
+        text-decoration: underline;
+        background-color:$ogs-primary-color;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:active {
+        outline: 1px solid $ogs-primary-color;
+        box-shadow: 0 0 3px $ogs-primary-color;
+        border-color: $ogs-primary-color;
+    }
+
+}
+.inactivePageButton {
+    display: none;
+}
+.currentPageButton {
+    width: 45px;
+    background-color: #F6F8F8;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
