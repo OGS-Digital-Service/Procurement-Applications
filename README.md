@@ -6,7 +6,7 @@ Each project in this repo will have its own folder with assets organized into th
 # COMMON Folder
 In here you'll find the base template files with assets for the NYS Global and Universal Navigations as well as component level styles for resuable applications components (built/styled using bootstrap 3).
 
-Isolated Components folder contains template-agnostic styling for some basic components, such as paragraph items, buttons, form and inputs, headings, and others.
+<strong> Isolated Components folder </strong> contains template-agnostic styling for some basic components, such as paragraph items, buttons, form and inputs, headings, and others.
 
 
 # PAWS
