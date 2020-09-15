@@ -55,14 +55,18 @@
 
 </p>
 
-<h1 class="demo-only">Form Label and Input Controls </h1>
+<h1 class="demo-only">Form, Label, and Input Controls </h1>
   
 
 <h5 class="demo-only"> Form Input Controls </h5>
+
+<p>Each input should have a semantic <code>id</code> attribute, and its label should have the same value in the <code>for</code> attribute. </p>
+
         <form><!-- using the bootstrap form and form group controls -->
           <div class="filterTitle">
               Filter Title 
           </div>
+          <fieldset>
           <div class="filterSectionHeader">
               Filter Section Title
           </div> 
@@ -94,12 +98,14 @@
               <input type="checkbox" id="PLACEHOLDERONLY7" onclick="filterContractorList()">
               <label for="PLACEHOLDERONLY7" class="filterSectionItem">Lot 7 - Name of This Lot</label>
             </div>
+          </fieldset>
   
-  
-          <div class="filterSectionHeader">
+          <fieldset>
+            <div class="filterSectionHeader">
               Checkboxes
-          </div>
-          <div class="form-group">
+            </div>
+
+            <div class="form-group">
               <input type="checkbox" id="mbeFilterCheck" onclick="filterContractorList()">
               <label for="mbeFilterCheck" class="filterSectionItem">MBE</label>
             </div>
@@ -112,34 +118,36 @@
             <div class="form-group">
               <input type="checkbox" id="sdvobFilterCheck" onclick="filterContractorList()">
               <label for="sdvobFilterCheck" class="filterSectionItem">SDVOB</label>
-          </div>
-          
+            </div>
+          </fieldset>
   
       </form>
 
 
       <h5 class="demo-only"> Text input </h5>
   <form>
-    <label for="placeholder-only-ID" class="ogs-label">Text Input Label</label>
-    <input type="text" id="placeholder-only-ID" > 
+    <fieldset>
+      <label for="placeholder-only-ID" class="ogs-label">Text Input Label</label>
+      <input type="text" id="placeholder-only-ID" > 
+    </fieldset>
 
-    <label for="placeholder-only-ID-2" class="ogs-label">Text Area Label </label>
-    <textarea id="placeholder-only-ID-2"></textarea> 
+    <fieldset>
+      <label for="placeholder-only-ID-2" class="ogs-label">Text Area Label </label>
+      <textarea id="placeholder-only-ID-2"></textarea> 
+    </fieldset>
     
-    
-
-
-
 
     <h5 class="demo-only"> Selectbox</h5>
-    <label for="placeholder-only-ID-3" class="ogs-label">Select Label </label>
-    <select id="placeholder-only-ID-3">
-      <option id="demoID1" selected disabled> - Select - </option>
-      <option id="demoID2"> First Option </option>
-      <option id="demoID2"> Second Option </option>
-      <option id="demoID2"> Billionth Option </option>
-      </select>
 
+    <fieldset>
+      <label for="placeholder-only-ID-3" class="ogs-label">Select Label </label>
+        <select id="placeholder-only-ID-3">
+         <option id="demoID1" selected disabled> - Select - </option>
+         <option id="demoID2"> First Option </option>
+         <option id="demoID2"> Second Option </option>
+         <option id="demoID2"> Billionth Option </option>
+        </select>
+    </fieldset>
 
   </form>
 
@@ -165,7 +173,15 @@
 <h1 class="demo-only">Design Areas </h1>
 
 <h5 class="demo-only"> Notification Area</h5>
-<div class="frame-wrapper ogs-primary-frame"><button class="component-frame">frame Design Area Button </button></div>
+
+
+<div class="frame-wrapper ogs-primary-frame">
+  
+  
+
+  <button class="component-alternate">frame Design Area Button </button>
+
+</div>
 
 </body>
 </html>
