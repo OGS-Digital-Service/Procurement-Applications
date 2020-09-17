@@ -95,39 +95,7 @@ li a {
     padding: 0px 9px 0px 0px;
 }
 
-.activePageButton {
-    width: 45px;
-    font-weight: normal;
-    padding: 10px;
-    color: #000 !important;
-    border: none !important;
-}
-.activePageButton:hover {
-    background-color:$ogs-primary-color  !important;
-    color: #fff !important;
-}
-.activePageButton-text {
-    min-width: 80px;
-    padding:10px;
-    background-color: white;
-    color: #000 !important;
-    border: none;
-}
-.activePageButton-text:hover {
-    text-decoration: underline;
-    background-color:$ogs-primary-color  !important;
-    color: #fff !important;
-}
-.inactivePageButton {
-    display: none;
-}
-.currentPageButton {
-    width: 45px;
-    background-color: #F6F8F8 !important;
-    color: #000 !important;
-    padding: 10px;
-    border: 1px solid #ccc !important;
-}
+
 .footNote {
    font-family: "Proxima Nova", "Arial" , sans-serif !important;
 }
