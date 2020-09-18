@@ -9,6 +9,7 @@
 }
 .row-no-right-margin {
     margin-right: 0px !important;
+    overflow: hidden;
 }
 .nopadding {
     margin: 0 !important;
@@ -17,6 +18,11 @@
 
 .padding-bottom-2rem {
     padding-bottom:2rem;
+}
+
+.nopadding-right {
+    padding-right: 0px !important;
+   
 }
 
 @media(max-width:992px) {

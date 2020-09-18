@@ -215,6 +215,23 @@ input[type="checkbox"] {
         left: 24px !important;
 }
 
+
+.aligned-row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+//   .row.match-my-cols {
+//     overflow: hidden; 
+// }
+
+// .row.match-my-cols [class*="col-"]{
+//     margin-bottom: -99999px;
+//     padding-bottom: 99999px;
+// }
+
+
+
 /* END all regular styles for OGS at desktop point ___________________________________________________________________*/
 
 
@@ -301,9 +318,9 @@ h5.panel-h5 {
     display: block;
     color: #000;
 }
-.navbar-ogssections-background {
-    min-height: 1vh !important;
-}
+// .navbar-ogssections-background {
+//     min-height: 1vh !important;
+// }
 .navbar-ogssections-award .icon-bar {  
     background-color: #000 !important;
 }
@@ -583,14 +600,19 @@ fieldset[disabled] .navbar-ogssections__filter .btn-link:focus {
 .navbar-ogssections {
     background-color: #D3D3D3;
     color: #9d9d9d;
+   
 }
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
 .navbar-ogssections-background {
-    min-height: 100vh;
-    margin-bottom: -25px;
-    z-index: -10;
-    position: relative;
+    margin-bottom: -99999px;
+     padding-bottom: 99999px;
     background-color: #D3D3D3;
-    display: block;
+    
+   
 }
 .navbar-ogssections /*.navbar-brand:hover,*/
 .navbar-ogssections /*.navbar-brand:focus */ {

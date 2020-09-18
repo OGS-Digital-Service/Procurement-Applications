@@ -162,7 +162,22 @@ button.component-frame {
 
 }
 .inactivePageButton {
-    display: none;
+    color: #666;
+    background-color: transparent;
+    cursor: default;
+
+    &:hover {
+        color: #666;
+    background-color: transparent;
+    }
+    
+    &:active {
+        outline: none;
+        box-shadow: none;
+        border-color: none;
+    }
+
+    
 }
 .currentPageButton {
     width: 45px;
@@ -170,6 +185,17 @@ button.component-frame {
     color: #000;
     padding: 10px;
     border: 1px solid #ccc;
+}
+
+span.ellipsis {
+    width: 45px;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+
+    &::after {
+        content: "...";
+    }
 }
 
 

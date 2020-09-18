@@ -527,7 +527,7 @@ body {
 
 .nys-global-footer {
   clear: both;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .nys-global-footer h3, .nys-global-footer h4, .nys-global-footer p, .nys-global-footer span, .nys-global-footer a {
   color: #000;
