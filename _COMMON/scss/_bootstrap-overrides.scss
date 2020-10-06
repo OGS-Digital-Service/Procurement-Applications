@@ -170,4 +170,12 @@ line-height: 26px;
         float: left
     }
 }
+
+
+@media(min-width:2400px) {
+   .col-xl-1 {
+       width: 8.3333%;
+       float:left;
+   }
+}
 /* END bootstrap overrides ___________________________________________________________*/
