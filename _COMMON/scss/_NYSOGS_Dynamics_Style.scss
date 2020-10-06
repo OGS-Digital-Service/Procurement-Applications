@@ -92,7 +92,7 @@ li a {
     font-size: 24px;
     line-height: 36px;
     font-weight: bold;
-    padding: 0px 9px 0px 0px;
+    padding: 0px 3px 0px 0px;
 }
 
 
@@ -178,7 +178,7 @@ input[type="checkbox"] {
 .searchTitle {
     font-weight: bold;
     font-family: "Oswald", sans-serif !important;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 20px 0px 10px 0px;
     color: #000 !important;
@@ -211,14 +211,22 @@ input[type="checkbox"] {
 }
 
 .searchIcon {
-        top: 68px !important;
-        left: 24px !important;
+        top: 68px;
+        left: 24px;
+        width: 30px;
+        position: absolute;
 }
 
 
 .aligned-row {
     display: flex;
     flex-flow: row wrap;
+  }
+
+
+  .filterSectionItem {
+    display: inline;
+    font-weight: normal;
   }
 
 //   .row.match-my-cols {
