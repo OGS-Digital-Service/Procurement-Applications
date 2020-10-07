@@ -62,9 +62,7 @@ li a {
 .nav-tabs {
     border-bottom: 0px solid #ddd !important;
 }
-#panel_general {
-    min-height: 200px;
-}
+
 .sectionContainer {
     padding-left: 15px;
     border-bottom: 1px solid #dddddd;
@@ -161,6 +159,9 @@ h5.panel-h5 {
     padding: 15px;
     float: left;
     width: 100%;
+    margin-bottom: 6rem;
+    min-height: 350px;
+    
 }
 
 .tab-spacer {
