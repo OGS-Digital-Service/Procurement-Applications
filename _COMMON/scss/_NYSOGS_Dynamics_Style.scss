@@ -168,7 +168,33 @@ h5.panel-h5 {
     padding-top: 2rem;
 }
 
+.nys-breadcrumb {
+    
+    display: flex;
+    font-family: $nys-secondary-font;
+    font-size: 16px;
+    text-transform: uppercase;
 
+    a::after, span::after {
+        background-image: url(../icons/arrow-right.svg);
+        background-size:12px 12px;
+        background-repeat:no-repeat;
+        width:.8em;
+        height:1.6em;
+        content:'';
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 .5em 0 .4em;
+
+    } 
+
+    #currentTabLabel::after  {
+        background-image: none;
+
+    }
+
+}
 
 /* input and form controls__________________________________________________ */
 
